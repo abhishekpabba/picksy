@@ -1,0 +1,8 @@
+'use client';
+
+import { useMemo } from 'react';
+import { useSearchParams } from 'next/navigation';
+
+function decode(v:string){try{return JSON.parse(decodeURIComponent(escape(atob(v))))}catch{return null}}
+
+export default function VerifyPage(){const params=useSearchParams();const record=useMemo(()=>decode(params.get('d')||''),[params]);return <main className="tool-shell"><header className="tool-top"><a href="/" className="brand"><span className="brandmark">P</span><span>Picksy</span></a><nav><a className="ghost" href="/giveaway">Create giveaway</a><a className="ghost" href="/wheel">Spin wheel</a></nav></header>{!record?<section className="panel verify-card"><div className="draw-orb">?</div><h1>Draw record not found</h1><p className="muted">This link is incomplete or invalid.</p></section>:<section className="panel verify-card"><span className="eyebrow">Picksy Draw Record</span><div className="verify-check">✓</div><h1>{record.title}</h1>{record.prize&&<p className="prize">Prize: <strong>{record.prize}</strong></p>}<div className="verify-grid"><div><span>Draw ID</span><strong>{record.id}</strong></div><div><span>Eligible entrants</span><strong>{record.entrants}</strong></div><div><span>Drawn</span><strong>{new Date(record.drawnAt).toLocaleString()}</strong></div><div><span>Selection method</span><strong>{record.method}</strong></div></div><div className="winner-card"><span>🎉 Selected winner{record.winners?.length>1?'s':''}</span>{(record.winners||[]).map((w:string,i:number)=><strong key={i}>{i+1}. {w}</strong>)}</div><p className="tiny">This page is a shareable record of the draw data contained in this link. It is not a server-signed or tamper-proof certificate.</p></section>}</main>}
