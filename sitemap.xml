@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://picksy-topaz.vercel.app/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://picksy-topaz.vercel.app/</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/wheel</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/giveaway</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/image-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/multiple-choice-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/ranking-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/rating-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/date-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/potluck-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/feedback-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://picksy-topaz.vercel.app/yes-no-poll</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
